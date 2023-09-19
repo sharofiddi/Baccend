@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    <h1>Раздача</h1>
+    {% for device in devices %}
+        <h2>{{ device.title }}</h2>
+        <img src="{{ device.image.url }}" alt="" width="450px">
+        <p>{{ device.bio }}</p>
+        <button type="button" >Учавствовать</button>
+
+    {% endfor %}
+{% endblock %}

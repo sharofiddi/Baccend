@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+  <div class="album py-5 bg-body-tertiary">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <!-- for "device" - название Модели in "devices" - Контсекст внутри view  -->
+        {% for device in devices %}
+          <div class="content">
+            
+            <img src="{{ device.image.url}}" width="250px" height="250px" />
+            <a href="{{ device.get_absolute_url }}" class="content_title">{{ device.title }}</a>
+
+          </div>
+
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endblock %}

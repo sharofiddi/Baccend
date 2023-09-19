@@ -1,0 +1,12 @@
+.content:hover{
+    transform: scale(1.6) translateY(5px);
+    transition: transform 500ms ease;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.content a{
+    text-decoration: none;
+    color: rgb(234, 60, 25);
+}
+
